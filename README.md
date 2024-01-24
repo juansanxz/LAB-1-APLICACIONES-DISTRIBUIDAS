@@ -25,8 +25,9 @@ La arquitectura debe tener las siguientes características:
 <img width="965" alt="image" src="https://github.com/juansanxz/TALLER-1-APLICACIONES-DISTRIBUIDAS/assets/123812331/dfd3fec2-73e3-4dd3-8bb4-5a2266748320">
 
 
-### Installing
+## Solución
 
+En primer lugar, se configura el servidor realizado en clase de acuerdo con los requisitos específicos y las características determinadas solicitadas en este taller.
 
 ## Running the tests
 
