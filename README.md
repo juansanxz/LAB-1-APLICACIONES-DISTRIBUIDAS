@@ -32,19 +32,24 @@ Se usó java 8 en la solución del laboratorio.
 ## Solución  
 
 Siguiendo la arquitectura especificada anteriormente, se procede a configurar el servidor fachada para que cumpla con las características esperadas.  
-En primer lugar, se utiliza el código proporcionado dentro del método `connectionWithExternalRestApi(String movieName)` para invocar al servicio externo que brindará la información de las películas. Luego, se configura lo que se enviará a través del flujo de salida hacia el cliente, para que sea formato JSON como se indica en el enunciado, y se ajusta para que cuando este realice una petición GET, se haga al recurso específico, por ejemplo: ` GET /movie?t=dora`. Además, al recibirse la solicitud, se redirige a la URL con el path asociado que contendrá una tabla con la respuesta. Por ejemplo, para el caso anteriormente mencionado, la redirección sería hacia `http://localhost:35000/movie?t=dora`, mostrando como resultado:  
-![img.png](img.png)  
+* En primer lugar, se utiliza el código proporcionado dentro del método `connectionWithExternalRestApi(String movieName)` para invocar al servicio externo que brindará la información de las películas. 
+* Luego, se configura lo que se enviará a través del flujo de salida hacia el cliente, para que sea formato JSON como se indica en el enunciado, y se ajusta para que cuando este realice una petición GET, se haga al recurso específico, por ejemplo: ` GET /movie?t=dora`. 
+* Además, al recibirse la solicitud, se redirige a la URL con el path asociado que contendrá una tabla con la respuesta. Por ejemplo, para el caso anteriormente mencionado, la redirección sería hacia `http://localhost:35000/movie?t=dora`, mostrando como resultado:  
 
-Para mostrar el resultado de esta forma, se implementó el método `movieDataService(String resource)`, el cuál recibirá de parámetro el recurso solicitado. Por ejemplo, para el caso anterior sería `/movie?t=dora`. Se apoya además del método `buildTable(String movieData)` para la construcción de la tabla.  
-Ahora, si se deseara extender la funcionalidad, para filtrar la búsqueda junto con otro parámetro, podría seguirse la lógica implementada para separar los elementos que hacen parte de la búsqueda.  
-Por otro lado, si se desea usar un proveedor distinto para alguna función, se le podría enviar de parámetro la url al método `connectionWithExternalRestApi(String movieName, String url)`, para que use la que necesite en un momento determinado.  
+![img.png](img/img.png)  
+
+
+* Para mostrar el resultado de esta forma, se implementó el método `movieDataService(String resource)`, el cuál recibirá de parámetro el recurso solicitado. Por ejemplo, para el caso anterior sería `/movie?t=dora`. 
+* Se apoya además del método `buildTable(String movieData)` para la construcción de la tabla.  
+* Ahora, si se deseara extender la funcionalidad, para filtrar la búsqueda junto con otro parámetro, podría seguirse la lógica implementada para separar los elementos que hacen parte de la búsqueda.  
+* Por otro lado, si se desea usar un proveedor distinto para alguna función, se le podría enviar de parámetro la url al método `connectionWithExternalRestApi(String movieName, String url)`, para que use la que necesite en un momento determinado.  
 
 
 ## Tests  
 
 Para las pruebas unitarias, se buscó comprobar que se estuviera realizando la solicitud a la API externa para obtener la información de la película, y además se comprobó el funcionamiento del caché.
-A continuación se observa que las pruebas se realizaron de forma exitosa.
-![img_1.png](img_1.png)  
+A continuación se observa que las pruebas se realizaron de forma exitosa.  
+![img_1.png](img/img_1.png)  
 La implementación de las pruebas se encuentra en el código.  
 
 
