@@ -196,7 +196,7 @@ public class HttpServer {
 
             if (!askingMovie) {
                 outputLine = "HTTP/1.1 200 OK\r\n"
-                        + "Content-Type:text/html; charset=utf-8\r\n"
+                        + "Content-Type:text/html, application/json; charset=utf-8\r\n"
                         + "\r\n"
                         + "<!DOCTYPE html>\r\n" + //
                         "<html>\r\n" + //
