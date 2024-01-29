@@ -14,7 +14,9 @@ A continuación, se elaborará un laboratorio en el que se deberá implementar l
 git clone https://github.com/juansanxz/LAB-1-APLICACIONES-DISTRIBUIDAS.git
 ```  
 
-2. Dirijase a su IDE y abra el proyecto, en este caso se estará haciendo el proceso con IntelliJ.  
+2. Dirijase a su IDE y abra el proyecto, en este caso se estará haciendo el proceso con IntelliJ.
+3. Ejecute la aplicación desde la clase HttpServer, que se encarga de administrar el servidor fachada.
+
 
 
 ## Autor
