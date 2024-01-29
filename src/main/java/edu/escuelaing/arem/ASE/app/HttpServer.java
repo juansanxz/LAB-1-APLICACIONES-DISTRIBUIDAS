@@ -65,8 +65,8 @@ public class HttpServer {
      * @return
      */
     private static String buildTable(String movieData) {
-        String rows;
-        rows = "<script>\n" +
+        String table;
+        table = "<script>\n" +
                 "    var movieData = " + movieData + "\r\n" +
                 "    // Function to add a row\r\n" +
                 "    function addRow(table, key, value) {\r\n" +
@@ -82,6 +82,9 @@ public class HttpServer {
                 "           });\n" +
                 "           ratingsHTML += \"</ul>\";\n" +
                 "           cell2.innerHTML = ratingsHTML;\n" +
+                "        } else if (key === \"Poster\" && !(value === \"N/A\")) {\n" +
+                "           var posterHTML = \"<img src=\" + value + \">\";\n"  +
+                "           cell2.innerHTML = posterHTML;\n" +
                 "        } else {\n" +
                 "           cell2.innerHTML = value;\n" +
                 "        }" +
@@ -97,7 +100,7 @@ public class HttpServer {
                 "        }\r\n" +
                 "    }\r\n" +
                 "</script>";
-        return rows;
+        return table;
     }
 
     public ConcurrentHashMap<String, String> getMoviesSearched() {
@@ -141,6 +144,7 @@ public class HttpServer {
                 System.out.println("Received: " + inputLine);
                 if (count == 0 && inputLine.contains("/movie")) {
                     System.out.println("again");
+                    System.out.println(moviesSearched);
                     askingMovie = true;
                     String resource = inputLine.split(" ")[1];
                     outputLine = movieDataService(resource);
