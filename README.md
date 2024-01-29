@@ -1,6 +1,8 @@
 # TALLER 1: APLICACIONES DISTRIBUIDAS (HTTP, SOCKETS, HTML, JS,MAVEN, GIT)
-
 A continuación, se elaborará un laboratorio en el que se deberá implementar la arquitectura sugerida más adelante, para consumir una API externa a partir de lo que un cliente solicite. En este caso, el cliente consultará la informacíon de una película a partir de su título.
+
+## Autor
+* **Juan Felipe Sánchez Pérez**
 
 ## Instalación y ejecución
 ### Prerequisitos
@@ -61,9 +63,6 @@ Siguiendo la arquitectura especificada, se procede a configurar el servidor fach
 
 ## Versión
 1.0
-
-## Autor
-* **Juan Felipe Sánchez Pérez**
 
 
 
