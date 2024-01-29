@@ -1,5 +1,21 @@
 # TALLER 1: APLICACIONES DISTRIBUIDAS (HTTP, SOCKETS, HTML, JS,MAVEN, GIT)
 
+A continuación, se elaborará un laboratorio en el que se deberá implementar la arquitectura sugerida más adelante, para consumir una API externa a partir de lo que un cliente solicite. En este caso, el cliente consultará la informacíon de una película a partir de su título.
+
+## Instalación y ejecución
+### Prerequisitos
+
+* Versión 1.8 de Java.
+* Si no cuenta con tal versión para ejecutarla desde la consola, dirijase a un IDE como IntelliJ en donde puede descargar y usar una versión específica de java para el proyecto.
+
+### Instalación
+1. Clonar el repositorio en la carpeta que desee. Para ello use el siguiente comando:
+```
+git clone 
+```
+
+
+
 ## Autor
 
 * **Juan Felipe Sánchez Pérez**
