@@ -11,9 +11,10 @@ A continuación, se elaborará un laboratorio en el que se deberá implementar l
 ### Instalación
 1. Clonar el repositorio en la carpeta que desee. Para ello use el siguiente comando:
 ```
-git clone 
-```
+git clone https://github.com/juansanxz/LAB-1-APLICACIONES-DISTRIBUIDAS.git
+```  
 
+2. Dirijase a su IDE y abra el proyecto, en este caso se estará haciendo el proceso con IntelliJ.  
 
 
 ## Autor
